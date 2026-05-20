@@ -406,7 +406,7 @@ footer {
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:6px;">前期總成本（內部，用於回收月數計算）</div>
         <div style="display:flex;align-items:center;gap:8px;">
           <span style="font-size:14px;color:var(--text-muted);">NT$</span>
-          <input type="number" id="recoup-input" value="1299200" min="0" step="1000"
+          <input type="number" id="recoup-input" value="1276706" min="0" step="1000"
             oninput="updateRecoup(this.value)"
             style="font-family:'DM Mono',monospace;font-size:18px;font-weight:600;color:var(--text);
                    border:none;border-bottom:2px solid var(--accent);background:transparent;
@@ -548,7 +548,7 @@ const PCT = n => (n >= 0 ? '+' : '') + Math.round(n) + '%';
 const USD_TWD = 32;
 const HOST_TWD = Math.round(497.06 * USD_TWD);
 const MGM_M = 3000, GAME_M = 5000;
-let RECOUP = 1299200;
+let RECOUP = 1276706;
 
 let tiers = [
   {label:'5,000 以內', base:4000},
